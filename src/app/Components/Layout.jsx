@@ -3,7 +3,7 @@ import SideBar from './SideBar';
 
 const Layout = ({ children }) => {
   return (
-    <div className='flex flex-row'>
+    <div className='retalive flex flex-row'>
       <SideBar/>
       {children}
     </div>
