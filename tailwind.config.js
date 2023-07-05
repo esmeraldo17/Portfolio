@@ -20,7 +20,7 @@ module.exports = {
         'md': '80px',
         'lg': '300px',
         'full': '9999px',
-        'large': '12px',
+        'large': '5px',
       }
     },
   },
