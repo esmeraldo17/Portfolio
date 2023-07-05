@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <div className='ml-[220px] flex flex-col items-center justify-center  h-[100vh] bg-cyan-500 p-6'>
       <div className='flex items-center '>
-        <div className='flex m-[10px] flex-col'>
+        <div className='flex m-[10px] mt-[100px] flex-col'>
           <h1 className='mr-5'>
             <span className='text-4xl font-semibold'>Ola, me chamo</span>
             <span className='text-4xl text-blue-100 font-semibold'> Esmeraldo Alberto </span><br/>
