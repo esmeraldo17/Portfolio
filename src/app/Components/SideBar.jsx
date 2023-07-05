@@ -6,13 +6,14 @@ import foto from '../assets/images/photo.jpeg';
 const SideBar = () => {
   return (
     <nav
-      className='fixed flex flex-col items-center justify-center w-[220px] h-[100vh] bg-cyan-800 rounded-r-lg shadow-xl shadow-cyan-600'
+      className='fixed flex flex-col items-center justify-center w-[220px] h-[100vh] bg-cyan-800 shadow-xl shadow-gray-600'
     >
       <Image src={foto} alt='foto de perfil' className='w-[60%] rounded-full  border-4 border-cyan-600 opacity-80'/>
       <div className='flex flex-col mt-6 items-center'>
+      <Link href='#home' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Home</Link>
         <Link href='#about' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Sobre mim</Link>
         <Link href='#projects' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Projetos</Link>
-        <Link href='#contact' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Contcto</Link>
+        <Link href='#contact' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Contato</Link>
       </ div>
       <div className='flex '>
         <Link href='https://github.com/esmeraldo17' target='_blank'>

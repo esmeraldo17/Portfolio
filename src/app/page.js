@@ -1,9 +1,12 @@
+import About from './Components/About';
 import Layout from './Components/Layout';
+import Welcome from './Components/Welcome';
 
 export default function Home() {
   return (
     <Layout>
-      <h1 className='ml-[220px]'>Hello World</h1>
+      <Welcome/>
+      <About />
     </ Layout>
   );
 }
