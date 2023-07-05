@@ -11,8 +11,8 @@ const SideBar = () => {
       <Image src={foto} alt='foto de perfil' className='w-[60%] rounded-full  border-4 border-cyan-600 opacity-80'/>
       <div className='flex flex-col mt-6 items-center'>
       <Link href='#home' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Home</Link>
-        <Link href='#about' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Sobre mim</Link>
         <Link href='#projects' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Projetos</Link>
+        <Link href='#about' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Sobre mim</Link>
         <Link href='#contact' className='mt-3 text-cyan-500 text-lg font-semibold hover:text-cyan-400'>Contato</Link>
       </ div>
       <div className='flex '>
