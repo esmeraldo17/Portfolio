@@ -1,7 +1,24 @@
-import React from 'react'
-import Link from 'next/link'
+"use client"
+import React, { useRef } from 'react';
+import Link from 'next/link';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_uhoif6r', 'template_msw9fqp', form.current, 'ChTQp6t7nH8gPwbNM')
+      .then((result) => {
+          console.log(result.text);
+          alert("Email Enviado")
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset()
+  };
   return (
     <div id='#contact' className='ml-[220px] bg-cyan-500 h-[100vh] p-6 flex flex-col items-center'>
       <h1 className='text-4xl font-bold flex flex-col items-center pt-7 mb-[50px]'>CONTATE-ME</h1>
@@ -22,7 +39,7 @@ const Contact = () => {
           </svg>
         </Link>
       </div>
-      <form className='mt-[50px] w-[50%] place-content-center'>
+      <form ref={form} onSubmit={sendEmail} className='mt-[50px] w-[50%] place-content-center' >
         <div class="relative mb-6" data-te-input-wrapper-init>
           <label
             for="name"
@@ -32,6 +49,7 @@ const Contact = () => {
             type="text"
             class="peer text-black block min-h-[auto] w-full border-black rounded border-2 bg-cyan-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="name"
+            name="user_name"
             placeholder="Name" />
         </div>
         <div class="relative mb-6" data-te-input-wrapper-init>
@@ -41,8 +59,9 @@ const Contact = () => {
           </label>
           <input
             type="email"
-            class="peer text-black block min-h-[auto] w-full rounded border-black border-2 bg-cyan-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            class="peer text-black block min-h-[auto] w-full rounded border-black border-2 bg-cyan-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="email"
+            name="user_email"
             placeholder="Email address" />
         </div>
         <div class="relative mb-6" data-te-input-wrapper-init>
@@ -51,8 +70,9 @@ const Contact = () => {
             >Message
           </label>
           <textarea
-            class="peer text-black block min-h-[auto] w-full rounded border-black border-2 bg-cyan-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            class="peer text-black block min-h-[auto] w-full rounded border-black border-2 bg-cyan-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="message"
+            name="message" 
             rows="3"
             placeholder="Message"></textarea>
         </div>
@@ -61,6 +81,7 @@ const Contact = () => {
           type="submit"
           class="w-full text-center rounded border-2 bg-cyan-600 hover:bg-cyan-900 px-6 pb-2 pt-2.5 text-xs uppercase leading-normal text-black border-black font-semibold  "
           data-te-ripple-init
+          value="send"
           data-te-ripple-color="light">
             Send
         </button>
