@@ -1,5 +1,6 @@
 import trecipes from '../images/trecipes.png';
 import geekdrinks from '../images/geekDrinks.png';
+import api from '../images/api.png';
 
 const data = [
     {
@@ -20,7 +21,7 @@ const data = [
     {
     name: 'Car-Shop API',
     descripton: 'API para gerenciar uma concessionária de veículos.',
-    image: geekdrinks,
+    image: api,
     technologies: ['Docker', 'Typescript', 'Node', 'Express', 'Mongodb'],
     github: 'https://github.com/esmeraldo17/car-shop',
     },

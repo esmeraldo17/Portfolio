@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import foto from '../assets/images/photo.jpeg';
 import data from '../assets/data/data';
 
 const Projects = () => {
