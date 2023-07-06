@@ -4,7 +4,7 @@ import React from 'react';
 
 const ProjectCard = ({name, description, image, technologies, github, deploy}) => {
   return (
-    <div className=' flex flex-col w-[300px] m-[30px] p-[10px] bg-white shadow-md shadow-gray-800 rounded-large items-center'>
+    <div className=' flex flex-col w-[300px] m-[30px] p-[10px] bg-white shadow-md shadow-gray-800 hover:shadow-lg hover:shadow-gray-800 rounded-large items-center'>
         <Image src={image} className='p-[10px] rounded-large' width="300" height="50"></Image>
         <h3 className='text-xl font-semibold'>{name}</h3>
         <p className='text-center'>{description}</p>
