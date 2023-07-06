@@ -9,7 +9,7 @@ const Welcome = () => {
       <div className='flex items-center '>
         <div className='flex m-[10px] mt-[100px] flex-col'>
           <h1 className='mr-5'>
-            <span className='text-4xl font-semibold'>Ola, me chamo</span>
+            <span className='text-4xl font-semibold'>Olá, me chamo</span>
             <span className='text-4xl text-blue-100 font-semibold'> Esmeraldo Alberto </span><br/>
             <span className='text-xl font-semibold'>FullStack Developer</span>
           </h1>
