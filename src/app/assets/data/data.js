@@ -4,7 +4,7 @@ import geekdrinks from '../images/geekDrinks.png';
 const data = [
     {
     name: 'T-Recepies',
-    descripton: 'Aplicativo de receitas comidas e bebidas',
+    descripton: 'Aplicativo de receitas de comidas e bebidas',
     image: trecipes,
     technologies: ['Docker', 'React'],
     github: 'https://github.com/esmeraldo17/T-Recepies',
