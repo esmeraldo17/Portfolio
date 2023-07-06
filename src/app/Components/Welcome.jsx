@@ -29,7 +29,7 @@ const Welcome = () => {
         <Image src={ foto } alt='esmeraldo-alberto' className='ml-5 rounded-tl-lg rounded-tr-md rounded-br-lg rounded-bl-sm opacity-80'></Image>
       </div>
 
-      <Link href='#about' className='mt-[60px]' >
+      <Link href='#projects' className='mt-[60px]' >
         <svg class="mt-[20px] w-6 h-6 text-gray-800 dark:text-white animate-bounce" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 12">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 7 4 4 4-4M1 1l4 4 4-4"/>
         </svg>
