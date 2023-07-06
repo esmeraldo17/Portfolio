@@ -8,25 +8,36 @@ const Projects = () => {
     name: 'teste',
     descripton: 'fazendo um test basico',
     image: foto,
-    technologies: ['Docker', 'JavaScript']
+    technologies: [{tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'}],
+    github: 'ckdjckddk',
+    deploy: 'jkddk'
     },
     {
       name: 'teste',
       descripton: 'fazendo um test basico',
       image: foto,
-      technologies: ['Docker', 'JavaScript']
+      technologies: [{tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'}],
+      github: 'ckdjckddk',
+      deploy: 'jkddk'
     },
     {
       name: 'teste',
       descripton: 'fazendo um test basico',
       image: foto,
-      technologies: ['Docker', 'JavaScript']
+      technologies: [{tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'}],
+      github: 'ckdjckddk',
+      deploy: 'jkddk'
     },
     {
       name: 'teste',
-      descripton: 'fazendo um test basico',
+      descripton: 'fazendo um test basico do meus projecto para ver como vai ficar',
       image: foto,
-      technologies: ['Docker', 'JavaScript']
+      technologies: [
+        {tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'},
+        {tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'},
+        {tec:'Docker', style:'bg-cyan-500 text-white rounded-large m-[2px]'}
+      ],
+      github: 'ckdjckddk',
     }
   ]
   return (
@@ -34,7 +45,7 @@ const Projects = () => {
       <h1 className='text-4xl font-semibold flex flex-col items-center mb-11'>Projetos</h1>
       <div className='flex flex-row flex-wrap bg-cyan-800 rounded-large '>
         {data.map((e) => (
-          <ProjectCard name={e.name} image={e.image} description={e.descripton} technologies={e.technologies}/>
+          <ProjectCard name={e.name} image={e.image} description={e.descripton} technologies={e.technologies} github={e.github} deploy={e.deploy}/>
         ))}
       </div>
     </div>
