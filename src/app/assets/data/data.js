@@ -1,4 +1,5 @@
 import trecipes from '../images/trecipes.png';
+import geekdrinks from '../images/geekDrinks.png';
 
 const data = [
     {
@@ -12,10 +13,17 @@ const data = [
     {
     name: 'Geek Drinks',
     descripton: 'Plataforma de delivery de cerveja',
-    image: trecipes,
+    image: geekdrinks,
     technologies: ['Docker', 'React', 'Node', 'Express', 'Mysql'],
     github: 'https://github.com/esmeraldo17/delivery-app',
     },
-  ]
+    {
+    name: 'Car-Shop API',
+    descripton: 'API para gerenciar uma concessionária de veículos.',
+    image: geekdrinks,
+    technologies: ['Docker', 'Typescript', 'Node', 'Express', 'Mongodb'],
+    github: 'https://github.com/esmeraldo17/car-shop',
+    },
+]
 
 export default  data;

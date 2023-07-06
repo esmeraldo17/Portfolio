@@ -8,7 +8,7 @@ const ProjectCard = ({name, description, image, technologies, github, deploy}) =
         <Image src={image} className='p-[10px] rounded-large' width="300" height="50"></Image>
         <h3 className='text-xl font-semibold'>{name}</h3>
         <p className='text-center'>{description}</p>
-        <div className='flex flex-wrap gap-x-3 my-4'>{technologies.map((e) => <span className={`${e} tec`}>{`#${e} `}</span>)}</div>
+        <div className='flex items-center justify-center flex-wrap gap-x-3 my-4'>{technologies.map((e) => <span className={`${e} tec mt-[5px]`}>{`#${e} `}</span>)}</div>
         <div className='flex gap-y-4'>
           <Link href={github} target='_blank'>
             <svg className="w-6 h-6 text-gray-800 dark:text-gray mr-[5px]" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
