@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id='about' className='ml-[220px] bg-cyan-500 flex flex-row p-[50px] gap-x-5 items-center justify-center'>
       <div className='flex flex-col '>
-        <h1 className='text-4xl font-semibold flex flex-col items-center'>Sobre Mim</h1>
+        <h1 className='text-4xl font-bold flex flex-col items-center'>SOBRE MIM</h1>
         <p className='text-base'>
         {/* <span className='font-semibold'></span> */}
           <span className='font-semibold'>Olá!</span> Sou um 
