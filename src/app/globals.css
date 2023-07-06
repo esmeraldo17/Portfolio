@@ -34,10 +34,42 @@
 	letter-spacing: 0.1em;
 }
 
+.React{
+	background-color: cyan;
+}
+
+.Next{
+	background-color: black;
+	color: white
+}
+
 .Docker{
 	background-color: cyan;
 }
 
 .Node{
 	background-color: #53a244;
+}
+
+.JavaScriot{
+	background-color: yellow;
+}
+
+.Typescript{
+	background-color: blue;
+	color: white;
+}
+
+.Express{
+	background-color: black;
+	color: white;
+}
+
+.Mongodb{
+	background-color: green;
+	color: white;
+}
+
+.Mysql{
+	background-color: orange;
 }
