@@ -1,6 +1,7 @@
 import trecipes from '../images/trecipes.png';
 import geekdrinks from '../images/geekDrinks.png';
 import api from '../images/api.png';
+import mediplayer from '../images/mediaPlayer.png';
 
 const data = [
     {
@@ -24,6 +25,14 @@ const data = [
     image: api,
     technologies: ['Docker', 'Typescript', 'Node', 'Express', 'Mongodb'],
     github: 'https://github.com/esmeraldo17/car-shop',
+    },
+    {
+    name: 'Music Media Player',
+    descripton: 'Reprodutor de musica.',
+    image: mediplayer,
+    technologies: ['Html', 'Css', 'Javascript'],
+    github: 'https://github.com/esmeraldo17/my-music-media-player',
+    deploy: 'https://musicplayer.esmeraldo.tech/'
     },
 ]
 

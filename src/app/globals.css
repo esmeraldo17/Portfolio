@@ -51,7 +51,7 @@
 	background-color: #53a244;
 }
 
-.JavaScriot{
+.Javascript{
 	background-color: yellow;
 }
 
@@ -65,11 +65,11 @@
 	color: white;
 }
 
-.Mongodb{
+.Mongodb, .Html{
 	background-color: green;
 	color: white;
 }
 
-.Mysql{
+.Mysql, .Css{
 	background-color: orange;
 }
